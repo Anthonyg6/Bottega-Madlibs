@@ -38,6 +38,25 @@
     position: absolute;
     background-color: #00cb79;
   }
+
+  &__h1 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    color: white;
+    font-family: "Montserrat";
+    text-align: center;
+  }
+
+  &__p {
+    font-family: "Montserrat";
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19px;
+    text-align: center;
+    width: 403px;
+  }
 }
 
 .card {
