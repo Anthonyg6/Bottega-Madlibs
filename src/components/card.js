@@ -4,22 +4,22 @@ import Input from "./input";
 import Content from "./content";
 
 const INITIAL_STATE = {
-  color: " ",
-  pluralNoun: " ",
-  adjectiveOne: " ",
-  celebOne: " ",
-  adjectiveTwo: " ",
-  nounOne: " ",
-  numberOne: " ",
-  numberTwo: " ",
-  nounTwo: " ",
-  adjectiveThree: " ",
-  celebTwo: " ",
-  celebThree: " ",
-  adjectiveFour: " ",
-  nounThree: " ",
-  celebFour: " ",
-  adjectiveFive: " ",
+  color: "",
+  pluralNoun: "",
+  adjectiveOne: "",
+  celebOne: "",
+  adjectiveTwo: "",
+  nounOne: "",
+  numberOne: "",
+  numberTwo: "",
+  nounTwo: "",
+  adjectiveThree: "",
+  celebTwo: "",
+  celebThree: "",
+  adjectiveFour: "",
+  nounThree: "",
+  celebFour: "",
+  adjectiveFive: "",
   contentVisible: false
 };
 
@@ -52,7 +52,8 @@ class Card extends Component {
       {
         title: "Plural Noun",
         state: this.state.pluralNoun,
-        name: "pluralNoun"
+        name: "pluralNoun",
+        placeholder: "Plural Noun"
       },
       {
         title: "Adjective",
@@ -81,7 +82,11 @@ class Card extends Component {
         name: "adjectiveThree"
       },
       { title: "Celebrity", state: this.state.celebTwo, name: "celebTwo" },
-      { title: "Celebrity", state: this.state.celeThree, name: "celeThree" },
+      {
+        title: "Celebrity",
+        state: this.state.celebThree,
+        name: "celebThree"
+      },
 
       {
         title: "Adjective",
@@ -91,7 +96,7 @@ class Card extends Component {
       {
         title: "Noun",
         state: this.state.nounThree,
-        name: "NounThree"
+        name: "nounThree"
       },
       { title: "Celebrity", state: this.state.celebFour, name: "celebFour" },
       {
