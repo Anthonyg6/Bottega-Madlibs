@@ -25,7 +25,7 @@
 
   justify-items: center;
   // align-items: center;
-  grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
+  grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 934px) [card-e];
 }
 
 .header {
@@ -108,17 +108,18 @@
 
   button {
     justify-self: center;
-    transform: translateY(50%);
   }
 
   &__generate {
     background-color: #00cb79;
+    transform: translateY(-300px);
     @include button;
   }
 
   &__clear {
     background-color: #45b0e5;
     @include button;
+    transform: translateY(50%);
   }
 
   &__content {

@@ -6,6 +6,12 @@ class Content extends Component {
     this.count = 1;
   }
 
+  componentDidUpdate() {}
+
+  componentWillReceiveProps() {
+    this.count = 1;
+  }
+
   renderLabel(data) {
     return [
       <div className="card__content__label">{this.count++}</div>,
@@ -22,12 +28,12 @@ class Content extends Component {
           your sportscaster, bringing you the last inning of the game between
           the Cleveland {this.renderLabel(data.pluralNoun)} and the{this.renderLabel(
             data.adjectiveOne
-          )}
-          Yankee’s.{this.renderLabel(data.celebOne)}is pitching for the Yankees.
-          Here’s the pitch! It’s a low {this.renderLabel(data.adjectiveTwo)}{" "}
-          ball that just cuts the inside of the {this.renderLabel(data.nounOne)}for
-          a strike. That makes the count {this.renderLabel(data.numberOne)}{" "}
-          strikes and {this.renderLabel(data.numberTwo)}
+          )}- Yankee’s.{this.renderLabel(data.celebOne)}is pitching for the
+          Yankees. Here’s the pitch! It’s a low{" "}
+          {this.renderLabel(data.adjectiveTwo)} ball that just cuts the inside
+          of the {this.renderLabel(data.nounOne)}for a strike. That makes the
+          count {this.renderLabel(data.numberOne)} strikes and{" "}
+          {this.renderLabel(data.numberTwo)}
           balls. Now here's the next pitch. The batter swings and connects. It's
           a long, high {this.renderLabel(data.nounTwo)} out to{" "}
           {this.renderLabel(data.adjectiveThree)}
